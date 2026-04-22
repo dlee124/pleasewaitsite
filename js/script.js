@@ -1,12 +1,14 @@
 const { Engine, Runner, Bodies, Body, Constraint, World, Mouse, MouseConstraint } = Matter;
 
 const canvas = document.getElementById('cradle-canvas');
-const W = 600, H = 500;
 const NUM_BALLS = 5;
-const BALL_R = 22;
-const SPACING = 47;
-const PIVOT_Y = 120;
-const REST_Y = 270;
+
+const W = 480, H = 400;
+const BALL_R = 17;
+const SPACING = 37;
+const PIVOT_Y = 95;
+const REST_Y = 215;
+
 const STRING_LEN = REST_Y - PIVOT_Y - BALL_R;
 
 let engine, runner, world, balls, constraints, mouseConstraint, mouse;
